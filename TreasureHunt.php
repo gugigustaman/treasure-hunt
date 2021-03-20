@@ -93,8 +93,7 @@ class TreasureHunt {
 
 			system("clear");
 
-			echo "The treasure is at ".implode(',', $c)."\n\n";
-			// echo "The treasure must be somewhere around.\n\n";
+			echo "The treasure must be somewhere around.\n\n";
 
 			$this->showMap($this->current_pos, $c);
 
@@ -175,7 +174,7 @@ class TreasureHunt {
 	            			}
 	            		}
 
-	            		$this->cheat_message = "\nPath to the treasure from starting point: \n".$this->showPath()."\n";
+	            		$this->cheat_message = "The treasure is at ".implode(',', $c)."\n\nPath to the treasure: \n".$this->showPath()."\n";
 
 	            		$this->current_pos = $this->last_pos;
 	            		$this->walked = $this->last_walked;
